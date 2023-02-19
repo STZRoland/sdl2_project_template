@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.16)
 project(MySDL2App)
 
+# Set C++ standard and other options
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 # Find the SDL2 library
 find_package(SDL2 REQUIRED)
 
@@ -10,9 +14,3 @@ include_directories(${SDL2_INCLUDE_DIRS})
 # Set up the build
 add_executable(MySDL2App main.cpp)
 target_link_libraries(MySDL2App ${SDL2_LIBRARIES})
-
-# Set C++ standard and other options
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
