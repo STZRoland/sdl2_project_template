@@ -1,5 +1,5 @@
 # sdl2_project_template
-A template for a C++ project using SDL2 and CMake.
+A template for a C++ project using SDL2 and CMake. The code renders a black window with a green square.
 
 ## Dependencies
 - SDL2 https://www.libsdl.orga
